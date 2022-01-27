@@ -18,7 +18,7 @@ const getComputerChoice = () => {
   } else {
     console.log('Error: There was an error picking computers choice.');
   }
-}
+};
 
 const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
@@ -32,14 +32,14 @@ const determineWinner = (userChoice, computerChoice) => {
   } else {
     console.log('Error!')
   }
-}
+};
 
 const playGame = () => {
   const userChoice = getUserChoice('rock');
   const computerChoice = getComputerChoice();
   console.log(`User Choice: ${userChoice}\nComputer Choice: ${computerChoice}`);
   console.log(`The results are: ${determineWinner(userChoice, computerChoice)}`)
-}
+};
 
 
 
